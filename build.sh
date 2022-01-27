@@ -4,7 +4,7 @@ set -ex
 
 # Used in ./configure.
 CMD=${1:-build_x86_64}
-TAG=${2:-12.11.0}
+TAG=${2:-14.0.0}
 
 export CONFIGURE_OPTIONS="--without-npm --with-intl=small-icu --shared --without-node-code-cache"
 
