@@ -6,7 +6,7 @@ set -ex
 CMD=${1:-build_x86_64}
 TAG=${2:-12.11.0}
 
-export CONFIGURE_OPTIONS="--without-npm --with-intl=small-icu --shared"
+export CONFIGURE_OPTIONS="--without-npm --with-intl=small-icu --shared --without-node-code-cache"
 
 download_and_extract() {
   local FILENAME="v$TAG.tar.gz"
